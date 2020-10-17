@@ -9,7 +9,7 @@ exports.up = async function(knex) {
 
 exports.down = async function(knex) {
   await knex.schema.alterTable("cars", (table) => {
-      table.dropColumn("trasmissionType")
+      table.dropColumn("transmissionType")
       table.dropColumn("titleStatus")
   })
 };
